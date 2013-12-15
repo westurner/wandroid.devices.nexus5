@@ -28,6 +28,7 @@ setup(
     packages = find_packages(
         exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
     namespace_packages = [
+        'wandroid',
         'wandroid.devices',
     ],
     package_dir={'wandroid.devices.nexus5': 'wandroid'},
