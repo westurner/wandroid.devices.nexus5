@@ -31,6 +31,11 @@ setup(
         'wandroid',
         'wandroid.devices',
     ],
+    entry_points = {
+        'wandroid_devices': [
+            'nexus5 = wandroid.devices.nexus5:Nexus5'
+        ]
+    },
     package_dir={'wandroid.devices.nexus5': 'wandroid'},
     include_package_data=True,
     install_requires=[
